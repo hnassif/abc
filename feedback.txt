@@ -1,0 +1,55 @@
+Project 1: abc Music Player		geopant, hnassif, vbok
+===========================		(grader: Leonid)
+
+Team contract: 5 / 5
+
+Design: 22 / 25
+  Milestone design: 12 / 15
+  Revised design: 10 / 10
+
+Implementation: 48 / 50
+  Warmup: 5 / 5
+  Code readability: 8 / 8
+  Specifications: 7 / 7
+  Functionality: 15 / 15
+  Our tests: 13 / 15
+    Tuplets: 1 / 2
+    Chords: 2 / 2
+    Repeats: 2 / 2
+    Voices: 2 / 2
+    Key signature: 2 / 2
+    Accidentals: 2 / 2
+    Rhythm: 2 / 3
+
+Testing: 15 / 15
+  Unit tests: 6 / 6
+  Integration tests: 6 / 6
+  Custom abc files: 3 / 3
+
+TOTAL TEAM SCORE: 90 / 95
+
+(Individual scores will include 5 points for the reflection assignment,
+ and will be posted on Stellar.)
+
+Feedback
+--------
+
+Design
+
+Your revised design looks great---you have a very clear document and
+are making very solid design decisions, which seem to be reflected in
+your code. Your original design is lacking a little bit; in
+particular, framing the parser idea around the "modify()" method is
+not great because it makes it difficult to reason about correctness. A
+state machine that processes chunks of music at a time is much cleaner.
+
+Implementation
+
+Your code looks absolutely great. Very readable, consistent, and
+well-organized. The one issue is that your tuples need to be able to
+process chords.
+
+
+Testing
+
+Good job on full end-to-end tests (rather than just listening ones)!
